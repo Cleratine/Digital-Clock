@@ -1,0 +1,68 @@
+/* Default Light Mode */
+body {
+    font:bold 12px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #000;
+    transition: all 0.3s, color 0.3s;
+}
+.clock{
+    border: 1px solid #606060;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: all 0.3s;
+    border: 2px solid #606060;
+}
+
+/* Dark Mode for Container */
+body.dark-mode .container {
+    background: #000;
+}
+#date{
+    font-size: 20px !important;
+    text-align: center;
+}
+
+/* Clock Display */
+#clock {
+    font-size: 90px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Toggle Button */
+#toggleMode {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    transition: all 0.3s, color 0.3s;
+}
+
+/* Button Dark Mode */
+body.dark-mode #toggleMode {
+    background: white;
+    color: black;
+}
